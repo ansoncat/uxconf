@@ -1,0 +1,20 @@
+[user]
+	name = ansoncat
+	email = ansoncat@gmail.com
+[color]
+	ui = auto
+	status = auto
+	diff = auto
+	branch = auto
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	ci = commit
+	di = diff
+	st = status
+	br = branch
+	re = remote
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[merge]
+	tool = vimdiff

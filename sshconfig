@@ -1,0 +1,9 @@
+host lab
+  Hostname archpc19.cs.nctu.edu.tw
+
+#host ps3
+#  Hostname 140.113.215.99
+#  Port 23
+
+#host prj
+#  Hostname 140.113.240.71
