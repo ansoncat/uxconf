@@ -1,9 +1,16 @@
 host lab
   Hostname archpc19.cs.nctu.edu.tw
 
-#host ps3
-#  Hostname 140.113.215.99
-#  Port 23
+host kero
+  Hostname arch8.cs.nctu.edu.tw
+  Port 443
 
-#host prj
-#  Hostname 140.113.240.71
+host vmcore
+  Hostname vmcore.cs.nctu.edu.tw
+
+host jvm
+  Hostname jvm.cs.nctu.edu.tw
+
+host akb
+  Hostname akb.cs.nctu.edu.tw
+
