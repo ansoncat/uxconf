@@ -9,12 +9,22 @@
 [core]
 	editor = vim
 [alias]
+	ai = add --interactive
 	co = checkout
-	ci = commit
-	di = diff
-	st = status
-	br = branch
+	c = commit
+	cm = commit -m
+	cma = commit -a -m
+	ca = commit --amend
+	caa = commit -a --amend -C HEAD
+	r = reset
+	d = diff
+	s = status
+	b = branch
 	re = remote
+	f = fetch
+	pl = pull
+	p = push
+	l = log
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [merge]
 	tool = vimdiff
