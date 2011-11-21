@@ -12,3 +12,6 @@ alias api='sudo apt-get install'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias ducks='du -cks * | sort -rn | head -11'
 alias g=git
+alias ga='git add -A . ; git reset HEAD vos-commons/src/main/resources/vos_hibernate.cfg.xml vos-server/src/main/resources/logDB.props.xml'
+alias gf='git cm "Update from upstream"'
+alias cdvi='cd ~/workplace/cht/virtuoso/workspace/virtuoso'
