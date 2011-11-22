@@ -11,6 +11,9 @@
 [core]
 	editor = vim
 [alias]
+	t = tfs
+	tp = tfs pull
+	tc = tfs checkintool
 	ai = add --interactive
 	co = checkout
 	c = commit
