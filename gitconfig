@@ -13,7 +13,7 @@
 [alias]
 	t = tfs
 	tp = tfs pull
-	tc = tfs checkintool
+	tc = tfs checkintool --build-default-comment
 	ai = add --interactive
 	co = checkout
 	c = commit
@@ -21,6 +21,10 @@
 	cma = commit -a -m
 	ca = commit --amend
 	caa = commit -a --amend -C HEAD
+	st = stash
+	sp = stash pop
+	rb = rebase
+	me = merge
 	r = reset
 	d = diff
 	s = status
