@@ -16,6 +16,8 @@
 	tc = tfs checkintool --build-default-comment
 	ai = add --interactive
 	co = checkout
+	cow = checkout work
+	com = checkout master
 	c = commit
 	cm = commit -m
 	cma = commit -a -m
