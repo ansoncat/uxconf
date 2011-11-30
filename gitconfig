@@ -24,9 +24,14 @@
 	st = stash
 	sp = stash pop
 	rb = rebase
+	rbm = rebase master
+	rbw = rebase work
 	me = merge
+	mem = merge master
+	mew = merge work
 	r = reset
 	d = diff
+	dc = diff --cached
 	s = status
 	b = branch
 	re = remote
