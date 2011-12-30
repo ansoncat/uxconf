@@ -28,6 +28,7 @@
 	rb = rebase
 	rbm = rebase master
 	rbw = rebase work
+	reh = reset HEAD
 	me = merge
 	mem = merge master
 	mew = merge work
