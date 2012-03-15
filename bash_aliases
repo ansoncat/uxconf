@@ -14,5 +14,5 @@ alias ducks='du -cks * | sort -rn | head -11'
 alias g=git
 alias ga='git add -A . ; git reset HEAD vos-commons/src/main/resources/vos_hibernate.cfg.xml vos-commons/src/main/resources/logDB.props.xml'
 alias gf='git cm "Update from upstream"'
-alias cdvi='cd /d/workplace/cht/virtuoso/workspace/virtuoso'
+alias cdvi='cd /d/workplace/cht/virtuoso/workspace/virtuoso-dev'
 alias alert='growlnotify "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
