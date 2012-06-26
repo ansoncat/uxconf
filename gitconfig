@@ -13,7 +13,7 @@
 [alias]
 	t = tfs
 	tp = tfs pull
-	tc = tfs checkintool --build-default-comment
+	tc = tfs checkintool
 	ai = add --interactive
 	co = checkout
 	cow = checkout work
