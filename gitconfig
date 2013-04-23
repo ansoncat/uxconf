@@ -1,8 +1,6 @@
 [user]
-	name = Anson Chen
-	email = anson@cht.com.tw
-[http]
-	proxy = proxy.cht.com.tw:8080
+	name = ansoncat
+	email = ansoncat@gmail.com
 [color]
 	ui = auto
 	status = auto
