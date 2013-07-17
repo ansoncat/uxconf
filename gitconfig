@@ -2,7 +2,7 @@
 	name = Anson Chen
 	email = anson@cht.com.tw
 [http]
-	proxy = proxy.cht.com.tw:8080
+;	proxy = proxy.cht.com.tw:8080
 [color]
 	ui = auto
 	status = auto
