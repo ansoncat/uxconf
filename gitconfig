@@ -49,3 +49,5 @@
 	tool = vimdiff
 [push]
 	default = matching
+[gui]
+        encoding = utf-8
