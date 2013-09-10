@@ -1,8 +1,6 @@
 [user]
-	name = Anson Chen
-	email = anson@cht.com.tw
-[http]
-;	proxy = proxy.cht.com.tw:8080
+	name = ansoncat
+	email = ansoncat@gmail.com
 [color]
 	ui = auto
 	status = auto
@@ -44,6 +42,8 @@
 	p = push
 	l = log
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	cpk = cherry-pick
+	cpkis = cherry-pick -X ignore-space-change -X ignore-all-space -X ignore-space-at-eol
 	cfg = config -l
 [merge]
 	tool = vimdiff
