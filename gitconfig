@@ -11,9 +11,10 @@
 [core]
 	editor = vim
 [alias]
+	bn = !sh -c 'git branch | sed -n \"/* /s///p\"'
 	t = tfs
-	tp = tfs pull
-	tc = tfs checkintool
+	tp = !sh -c 'git tfs pull -i `git bn`'
+	tc = !sh -c 'git tfs checkintool -i `git bn`'
 	ai = add --interactive
 	co = checkout
 	cow = checkout work
