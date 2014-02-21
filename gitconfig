@@ -13,8 +13,8 @@
 [alias]
 	bn = !sh -c 'git branch | sed -n \"/* /s///p\"'
 	t = tfs
-	tp = !sh -c 'git tfs pull -i `git bn`'
-	tc = !sh -c 'git tfs checkintool -i `git bn`'
+	tp = git tfs pull -I
+	tc = git tfs checkintool -I
 	ai = add --interactive
 	co = checkout
 	cow = checkout work
