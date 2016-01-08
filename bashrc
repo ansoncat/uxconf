@@ -39,3 +39,9 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+if [ -f ~/autojump.bash ]; then
+    . ~/autojump.bash
+fi
+
+export MSYS_NO_PATHCONV=1
