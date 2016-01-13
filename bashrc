@@ -44,4 +44,3 @@ if [ -f ~/autojump.bash ]; then
     . ~/autojump.bash
 fi
 
-export MSYS_NO_PATHCONV=1
