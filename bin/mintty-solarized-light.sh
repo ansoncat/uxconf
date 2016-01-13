@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # solarized light
 echo -ne '\e]4;0;#073642\a'   # black
 echo -ne '\e]4;1;#dc322f\a'   # red
