@@ -44,3 +44,6 @@ if [ -f ~/autojump.bash ]; then
     . ~/autojump.bash
 fi
 
+export HTTP_PROXY=http://proxy.cht.com.tw:8080
+export HTTPS_PROXY=http://proxy.cht.com.tw:8080
+export NO_PROXY=localhost,470tfs,10.144.190.111,10.144.190.112,10.144.190.113
