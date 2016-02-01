@@ -53,3 +53,5 @@
 	default = matching
 [gui]
         encoding = utf-8
+[gitreview]
+	username = anson
