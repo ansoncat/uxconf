@@ -39,3 +39,12 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+if [ -f ~/autojump.bash ]; then
+    . ~/autojump.bash
+fi
+
+export HTTP_PROXY=http://proxy.cht.com.tw:8080
+export HTTPS_PROXY=http://proxy.cht.com.tw:8080
+export NO_PROXY=localhost,470tfs,10.144.190.111,10.144.190.112,10.144.190.113
+export NODE_PATH=$APPDATA\\npm\\node_modules\\

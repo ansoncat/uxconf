@@ -51,3 +51,8 @@
 	default = matching
 [gui]
         encoding = utf-8
+[gitreview]
+	username = anson
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
