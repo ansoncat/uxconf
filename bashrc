@@ -40,8 +40,30 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/autojump.bash ]; then
-    . ~/autojump.bash
+# Specific setting for MAC homebrew
+BREW_PREFIX=`brew --prefix`
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+if [ -f $BREW_PREFIX/etc/bash_completion ]; then
+    . $BREW_PREFIX/etc/bash_completion
 fi
 
-#export NODE_PATH=$APPDATA\\npm\\node_modules\\
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+    GIT_PROMPT_THEME=Default
+    TERM_TITLE="\[\033]0;\w\007\]"
+    GIT_PROMPT_START=$TERM_TITLE"\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]"
+    GIT_PROMPT_END="\$ "
+    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
+
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+export GREP_OPTIONS='--color=auto'
