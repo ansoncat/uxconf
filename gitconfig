@@ -10,9 +10,6 @@
 	editor = vim
 [alias]
 	bn = !sh -c 'git branch | sed -n \"/* /s///p\"'
-	t = tfs
-	tp = tfs pull
-	tc = tfs checkintool
 	ai = add --interactive
 	co = checkout
 	cow = checkout work
@@ -51,8 +48,6 @@
 	default = matching
 [gui]
         encoding = utf-8
-[gitreview]
-	username = anson
 [pager]
 	diff = diff-so-fancy | less --tabs=4 -RFX
 	show = diff-so-fancy | less --tabs=4 -RFX
