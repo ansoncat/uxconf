@@ -10,6 +10,7 @@ alias s='sudo'
 alias aps='apt-cache search'
 alias api='sudo apt-get install'
 alias update='sudo apt-get update && sudo apt-get upgrade'
+alias brewup='brew update && brew upgrade --cleanup && say finished'
 alias ducks='du -cks * | sort -rn | head -11'
 alias g=git
 alias ga='git add -A .'
