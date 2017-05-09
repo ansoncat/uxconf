@@ -72,3 +72,6 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 export GREP_OPTIONS='--color=auto'
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
