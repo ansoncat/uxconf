@@ -65,7 +65,6 @@ fi
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 export CLICOLOR=1
@@ -81,3 +80,8 @@ export TTC_BOTS="tinycarebot,selfcare_bot"
 export TTC_REPOS="~/workplace"
 export TTC_REPOS_DEPTH="2"
 export TTC_WEATHER="Taichung"
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
