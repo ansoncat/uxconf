@@ -56,6 +56,7 @@ if [ -f $BREW_PREFIX/etc/bash_completion ]; then
 fi
 
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+    __GIT_PROMPT_DIR="$(brew --prefix bash-git-prompt)/share"
     GIT_PROMPT_THEME=Default
     TERM_TITLE="\[\033]0;\w\007\]"
     GIT_PROMPT_START=$TERM_TITLE"\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]"
@@ -85,3 +86,14 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export JDK_HOME=${JAVA_HOME}
+if [ -f `which gradle` ]; then
+    export GRADLE_HOME=$(cat `which gradle` | awk 'NR>1 {gsub(/"/,"",$3) split($3,a, "/bin"); print a[1]}')
+fi
+
+if [ -f /bin/launchctl ]; then
+    launchctl setenv JAVA_HOME ${JAVA_HOME}
+    launchctl setenv JDK_HOME ${JDK_HOME}
+    launchctl setenv GRADLE_HOME ${GRADLE_HOME}
+fi
