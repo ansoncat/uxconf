@@ -73,7 +73,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 
 export GREP_OPTIONS='--color=auto'
 
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="~/bin:/usr/local/opt/openssl/bin:$PATH"
 
 #Support tiny-care-terminal
 export TTC_APIKEYS="false"
