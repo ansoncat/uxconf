@@ -85,6 +85,7 @@ export TTC_WEATHER="Taichung"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+if which pipenv > /dev/null; then eval "$(pipenv --completion)"; fi
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export JDK_HOME=${JAVA_HOME}
