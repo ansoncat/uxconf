@@ -97,3 +97,6 @@ if [ -f /bin/launchctl ]; then
     launchctl setenv JDK_HOME ${JDK_HOME}
     launchctl setenv GRADLE_HOME ${GRADLE_HOME}
 fi
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
