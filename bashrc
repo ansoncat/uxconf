@@ -79,9 +79,10 @@ export GREP_OPTIONS='--color=auto'
 export PATH="~/bin:/usr/local/opt/openssl/bin:$PATH"
 
 #Support tiny-care-terminal
-export TTC_APIKEYS="false"
-export TTC_BOTS="tinycarebot,selfcare_bot"
-export TTC_REPOS="~/workplace"
+export TTC_APIKEYS=false
+export TTC_BOTS="tinycarebot,selfcare_bot,magicrealismbot"
+export TTC_SAY_BOX='parrot'
+export TTC_REPOS="/Users/ansoncat/workplace"
 export TTC_REPOS_DEPTH="2"
 export TTC_WEATHER="Taichung"
 
