@@ -85,9 +85,17 @@ export TTC_REPOS="~/workplace"
 export TTC_REPOS_DEPTH="2"
 export TTC_WEATHER="Taichung"
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+fi
+
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 if which pipenv > /dev/null; then eval "$(pipenv --completion)"; fi
+
+eval "`pip completion --bash`"
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export JDK_HOME=${JAVA_HOME}
